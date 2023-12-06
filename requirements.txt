@@ -4,6 +4,5 @@ streamlit
 pandas
 plotly
 seaborn
-os
 numpy
 altair
