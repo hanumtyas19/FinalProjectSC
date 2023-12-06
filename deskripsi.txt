@@ -1,0 +1,42 @@
+Water Quality Prediction
+
+Aplikasi Water Quality Prediction Adalah sebuah aplikasi yang berbasis Machine Learning
+aplikasi ini digunakan untuk memprediksi apakah air itu bisa dikonsumsi untuk manusia
+dengan menggunakan inputan pH, Hardness, Solids, dan kandungan Organic Carbon dari air
+yang nantinya menentukan Potability dari air tersebut,
+
+Aplikasi ini menggunakan Model Supervised Learning dan menggunakan Metode Decission Tree
+Model Supervised Learning adalah suatu pendekatan dalam pembelajaran mesin di mana algoritma 
+dilatih menggunakan kumpulan data berlabel. Artinya, data masukan disertai dengan keluaran yang benar 
+yang telah ditentukan sebelumnya. Tujuan dari Supervised Learning adalah untuk mempelajari hubungan atau 
+pola antara masukan dan keluaran sehingga algoritma dapat membuat prediksi atau klasifikasi yang akurat 
+terhadap data baru yang belum pernah dilihat sebelumnya.
+
+Regression Tree adalah salah satu jenis model dalam machine learning yang digunakan untuk menangani tugas regresi.
+Model ini merupakan bagian dari keluarga algoritma Decision Tree. Seperti halnya Decision Tree untuk klasifikasi, 
+Regression Tree digunakan untuk memprediksi variabel target yang bersifat kontinu atau numerik.
+
+Dalam hal ini kami menggunakan DecisionTreeRegressor
+DecisionTreeRegressor adalah salah satu implementasi dari model Decision Tree yang digunakan untuk tugas regresi 
+dalam framework scikit-learn, sebuah perpustakaan populer untuk machine learning di Python. Model ini termasuk dalam
+ kelas algoritma Supervised Learning.
+
+Dalam DecisionTreeRegressor, pohon keputusan dibuat untuk memodelkan hubungan antara fitur (variabel independen) dan 
+target (variabel dependen) yang bersifat kontinu atau numerik. Model ini memiliki kemampuan untuk menangani tugas prediksi 
+nilai yang kontinu, seperti prediksi harga, suhu, atau angka lainnya.
+
+Berikut adalah beberapa konsep kunci terkait DecisionTreeRegressor:
+
+1. Node Pemisah (Split Node): Pada setiap node dalam pohon keputusan, suatu kondisi pemisah diterapkan ke fitur tertentu. 
+   Ini membagi dataset menjadi dua kelompok berdasarkan kondisi tersebut.
+
+2. Node Daun (Leaf Node): Node di ujung cabang yang tidak dapat dibagi lebih lanjut disebut node daun. Setiap node daun berisi 
+   nilai prediksi untuk variabel target. Dalam DecisionTreeRegressor, nilai ini umumnya adalah rata-rata dari nilai target di dalam node tersebut.
+
+3. Kondisi Pemisah: Kondisi di setiap node didasarkan pada nilai fitur tertentu. Misalnya, "Apakah nilai suatu fitur lebih besar dari 25?" bisa menjadi
+   salah satu kondisi pemisah.
+
+4. Kriteria Pemisahan: Dalam konteks regresi, kriteria umum yang digunakan untuk memilih kondisi pemisahan optimal adalah mengukur reduksi Mean Squared Error (MSE) atau Mean Absolute Error (MAE) di setiap node.
+
+
+
